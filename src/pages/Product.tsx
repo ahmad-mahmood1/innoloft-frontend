@@ -46,28 +46,24 @@ function Product() {
   }
 
   return (
-    <div className="flex my-4">
-      <div className="hidden md:block min-w-[25%]">
-        <UserNav user={data.user} company={data?.company} />
+    <div className="space-y-4 w-full">
+      <div className="flex justify-between">
+        <Breadcrumbs
+          breadcrumbs={[...productBreadcrumbs, { element: data.name }]}
+        />
+        <Button
+          onClick={() => {
+            navigate(isEditRoute ? PRODUCT_PAGE : PRODUCT_EDIT_PAGE, {
+              replace: true,
+            });
+          }}
+        >
+          {isEditRoute ? "View Offer" : "Edit"}
+        </Button>
       </div>
-      <div className="space-y-4 w-full">
-        <div className="flex justify-between">
-          <Breadcrumbs
-            breadcrumbs={[...productBreadcrumbs, { element: data.name }]}
-          />
-          <Button
-            onClick={() => {
-              navigate(isEditRoute ? PRODUCT_PAGE : PRODUCT_EDIT_PAGE, {
-                replace: true,
-              });
-            }}
-          >
-            {isEditRoute ? "View Offer" : "Edit"}
-          </Button>
-        </div>
-        <ProductInfo product={data} />
-      </div>
+      <ProductInfo product={data} />
     </div>
+    // </div>
   );
 }
 

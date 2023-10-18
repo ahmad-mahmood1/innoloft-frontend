@@ -14,7 +14,7 @@ function Breadcrumbs({
     const init: any[] = [];
 
     const forwardArrow = (key: number) => (
-      <div className="mx-2 md:mx-4" key={"arrow" + key}>
+      <div className="mx-1 md:mx-3" key={"arrow" + key}>
         <Icons.arrowRight stroke="grey" strokeWidth={"0.6"} />
       </div>
     );

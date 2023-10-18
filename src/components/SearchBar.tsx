@@ -1,3 +1,5 @@
+import { Input } from "./ui/input";
+
 function SearchBar() {
   return (
     <div className="relative w-full max-w-[60%]">
@@ -18,10 +20,10 @@ function SearchBar() {
           />
         </svg>
       </div>
-      <input
+      <Input
         type="search"
         id="default-search"
-        className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-sm bg-gray-50"
+        className="bg-white pl-8"
         placeholder="Search Mockups, Logos..."
       />
     </div>

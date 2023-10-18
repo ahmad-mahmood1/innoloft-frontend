@@ -30,5 +30,9 @@ const productEndPoints = parentApi.injectEndpoints({
   overrideExisting: true,
 });
 
-export const { useGetProductQuery, useEditProductMutation, useGetTRLQuery } =
-  productEndPoints;
+export const {
+  useGetProductQuery,
+  useLazyGetProductQuery,
+  useEditProductMutation,
+  useGetTRLQuery,
+} = productEndPoints;

@@ -107,7 +107,7 @@ function ProductVideo({ source }: VideoProps) {
                 ) : (
                   <iframe
                     src={source}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     title="Product Video"
                     className="aspect-video w-full md:w-4/5 mx-auto"
