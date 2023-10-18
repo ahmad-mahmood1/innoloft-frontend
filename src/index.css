@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: "#eee";
+    --foreground: "#000";
+
+    --primary: #000;
+    --primary-foreground: #eee;
+
+    --base: #374151;
+    --muted: #6b7280;
+    --muted-background: #e5e7eb;
+
+    --border: #e5e7eb;
+    --radius: 0.5rem;
+    --input: #000;
+    --destructive: #e62020;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  .rootContainer {
+    @apply box-border font-sans flex flex-col bg-slate-50 text-foreground min-h-screen;
+  }
+
+  .center {
+    @apply flex flex-col items-center justify-center;
+  }
+}
