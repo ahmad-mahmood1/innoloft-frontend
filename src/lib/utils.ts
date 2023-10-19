@@ -6,9 +6,10 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const getBaseUrl = () =>
-  process.env.REACT_PUBLIC_BASE_URL || "https://api-test.innoloft.com";
+  import.meta.env.REACT_PUBLIC_BASE_URL || "https://api-test.innoloft.com";
 
-export const getAppId = () => parseInt(process.env.REACT_PUBLIC_APP_ID || "1");
+export const getAppId = () =>
+  parseInt(import.meta.env.REACT_PUBLIC_APP_ID || "1");
 
 export const mapThemeToRoot = (color: string) => {
   const root = document.documentElement;

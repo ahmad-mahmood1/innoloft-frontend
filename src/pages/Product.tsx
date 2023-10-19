@@ -1,6 +1,5 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ErrorState from "@/components/ErrorState";
-import UserNav from "@/components/UserNav";
 import { Icons } from "@/components/icons";
 import ProductInfo from "@/components/product/ProductInfo";
 import { Button } from "@/components/ui/button";

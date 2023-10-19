@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import {
   ContentState,
   EditorState,
@@ -5,7 +6,6 @@ import {
   convertToRaw,
 } from "draft-js";
 import draftToHtml from "draftjs-to-html";
-import DOMPurify from "dompurify";
 
 export const sanitizeHtmlString = (str: string): string => {
   return DOMPurify.sanitize(str, {
